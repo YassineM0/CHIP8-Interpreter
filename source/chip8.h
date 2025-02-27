@@ -10,6 +10,7 @@
 #define STACK_SIZE 16
 
 #define PROGRAM_START_ADRESS 0x200
+#define FONTSET_START_ADDRESS 0x50
 
 #define HEIGHT 32
 #define WIDTH 64
