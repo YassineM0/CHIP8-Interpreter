@@ -1,18 +1,22 @@
-#ifndef chip8.h
-#define chip8.h
+#ifndef CHIP8_H
+#define CHIP8_H
 
 #include <cstdint>
+#include <stdio.h>
+#include <iostream>
 
 #define V_NUM 16
 #define MEMORY_CAPACITY 4096
 #define STACK_SIZE 16
+
+#define PROGRAM_START_ADRESS 0x200
 
 #define HEIGHT 32
 #define WIDTH 64
 
 
 
-class ship8
+class Chip8
 {
 private:
     uint8_t MEMORY[MEMORY_CAPACITY]{};
@@ -25,9 +29,13 @@ private:
 
     uint32_t display[HEIGHT][WIDTH]; // 64*32 screen size
 
+    //timers
     uint8_t delay_timer;
     uint8_t sound_timer;
 
+public:
+    Chip8();
+    int loadRom(const char* filename);
 };
 
 #endif
