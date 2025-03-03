@@ -214,10 +214,21 @@ void Chip8::emulateCycle()
             V[x] = V[x] << 1; 
             break;
         }
+
     case 0x9000:
         //Skip next instruction if Vx != Vy.
         if(V[(opcode & 0x0F00) >> 8] != V[(opcode & 0x00F0) >> 4])
             pc += 2;
+        break;
+    
+    case 0xA000:
+        //Set I = nnn.
+        index = (opcode & 0x0FFF);
+        break;
+    
+    case 0xB000:
+        //Jump to location nnn + V0.
+        pc = (opcode & 0x0FFF) + V[0];
         break;
     
     }
