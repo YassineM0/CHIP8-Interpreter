@@ -213,7 +213,12 @@ void Chip8::emulateCycle()
 
             V[x] = V[x] << 1; 
             break;
+        
+        default:
+            std::cout << "uknown opcode" << std::hex << opcode << std::endl;
+            break;
         }
+        break;
 
     case 0x9000:
         //Skip next instruction if Vx != Vy.
@@ -230,6 +235,162 @@ void Chip8::emulateCycle()
         //Jump to location nnn + V0.
         pc = (opcode & 0x0FFF) + V[0];
         break;
+    
+    case 0xC000:
+        // Generate a random byte (0 to 255), AND it with kk, and store in Vx.
+        V[(opcode & 0x0F00) >> 8] = (rand() % 256) & (opcode & 0x00FF);
+        break;
+    
+    case 0xD000:
+        //Display n-byte sprite starting at memory location I at (Vx, Vy), set VF = collision.
+        uint8_t Vx = (opcode & 0x0F00) >> 8;
+        uint8_t Vy = (opcode & 0x00F0) >> 4;
+        uint8_t sprite_bytes = opcode & 0x000F;
+
+        //handle out of bounds coordinates
+        uint8_t x = V[Vx] % WIDTH;
+        uint8_t y = V[Vy] % HEIGHT;
+
+        V[0xF] = 0;
+        for(int i = 0;i < sprite_bytes;i++)
+        {
+            uint8_t sprite_byte = MEMORY[index + i];
+            for(int j = 0;j < 8;j++)
+            {
+                uint8_t pixel = (sprite_byte >> (7 - j)) & 1;
+                uint32_t *screen = &display[y + i][x + j];
+
+                if(pixel)
+                {
+                    //check if there is already a pixel on in this position
+                    if(*screen == 0xFFFFFFFF)
+                    {
+                        V[0xf] = 1;
+                    }
+
+                    *screen ^= 0xFFFFFFFF;
+                }
+
+            }
+        }
+        break;
+
+    case 0xE000:
+        switch(opcode & 0x000F)
+        {
+            case 0xE:
+                //Skip next instruction if key with the value of Vx is pressed.
+                uint8_t Vx = (opcode & 0x0F00) >> 8;
+
+                if(key[Vx])
+                {
+                    pc += 2;
+                }
+                break;
+            
+            case 0x1:
+                //Skip next instruction if key with the value of Vx is not pressed.
+                uint8_t Vx = (opcode & 0x0F00) >> 8;
+
+                if(!key[Vx])
+                {
+                    pc += 2;
+                }
+                break;
+            
+            default:
+                std::cout << "uknown opcode" << std::hex << opcode << std::endl;
+                break;
+        }
+        break;
+    
+    case 0xF000:
+        switch(opcode & 0x00FF)
+        {
+            case 0x07:
+                //Set Vx = delay timer value.
+                uint8_t Vx = (opcode & 0x0F00) >> 8;
+
+                V[Vx] = delay_timer;
+                break;
+            
+            case 0x0A:
+                //Wait for a key press, store the value of the key in Vx.
+                uint8_t Vx = (opcode & 0x0F00) >> 8;
+
+                bool keyPressed = false;
+                for(int i = 0;i < 16;i++)
+                {
+                    if(key[i])
+                    {
+                        V[Vx] = i;
+                        keyPressed = true;
+                        break;
+                    }
+                }
+                if(!keyPressed)
+                    pc -=2;
+                break;
+            
+            case 0x15:
+                //Set delay timer = Vx.
+                uint8_t Vx = (opcode & 0x0F00) >> 8;
+                delay_timer = Vx;
+                break;
+                
+            case 0x18:
+                //Set sound timer = Vx.
+                uint8_t Vx = (opcode & 0x0F00) >> 8;
+                sound_timer = Vx;
+                break;
+            
+            case 0x1E:
+                //Set I = I + Vx.
+                uint8_t Vx = (opcode & 0x0F00) >> 8;
+                index += Vx;
+                break;
+
+            case 0x29:
+                //Set I = location of sprite for digit Vx.
+                uint8_t Vx = (opcode & 0x0F00) >> 8;
+                uint8_t digit = V[Vx];
+
+                index = 0x50 + (digit * 5);
+                break;
+                
+            case 0x33:
+                //Store BCD representation of Vx in memory locations I, I+1, and I+2.
+                uint8_t Vx = (opcode & 0x0F00) >> 8; 
+                uint8_t value = V[Vx]; 
+            
+                MEMORY[index] = value / 100;           
+                MEMORY[index + 1] = (value / 10) % 10; 
+                MEMORY[index + 2] = value % 10;        
+            
+                break;
+
+            case 0x55:
+                //Store registers V0 through Vx in memory starting at location I.
+                uint8_t Vx = (opcode & 0x0F00) >> 8;
+
+                for (uint8_t i = 0; i <= Vx; ++i)
+                {
+                    MEMORY[index + i] = V[i];
+                }
+                break;
+            
+            case 0x65:
+                //Read registers V0 through Vx from memory starting at location I.
+                uint8_t Vx = (opcode & 0x0F00) >> 8;
+                for(int i = 0; i <= Vx;i++)
+                {
+                    V[i] = MEMORY[index + i];
+                }
+                break;
+                
+
+        }
+    
     
     }
 }

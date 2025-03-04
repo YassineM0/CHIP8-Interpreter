@@ -31,6 +31,8 @@ private:
 
     uint32_t display[HEIGHT][WIDTH]; // 64*32 screen size
 
+    uint8_t key[16]{};
+
     //timers
     uint8_t delay_timer;
     uint8_t sound_timer;
