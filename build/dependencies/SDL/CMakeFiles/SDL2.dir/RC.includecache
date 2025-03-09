@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/yassi/source/repos/chip-8/dependencies/SDL/src/main/windows/version.rc
+winresrc.h
+C:/Users/yassi/source/repos/chip-8/dependencies/SDL/src/main/windows/winresrc.h
+

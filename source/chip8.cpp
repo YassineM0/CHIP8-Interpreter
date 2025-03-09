@@ -390,6 +390,9 @@ void Chip8::emulateCycle()
                 
 
         }
+        default:
+                std::cout << "uknown opcode" << std::hex << opcode << std::endl;
+                break;
     
     
     }

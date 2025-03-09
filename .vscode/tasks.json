@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build CHIP-8",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "source/main.cpp",
+                "-o", "chip-8.exe",
+                "-IC:/Users/yassi/source/repos/chip-8/dependencies/SDL/include", 
+                "-LC:/Users/yassi/source/repos/chip-8/dependencies/SDL/lib",
+                "-lSDL2"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
