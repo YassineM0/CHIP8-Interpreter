@@ -1,0 +1,4 @@
+C:/Users/yassi/source/repos/chip-8/out/build/x64-Debug/CMakeFiles/LibsModule.dir
+C:/Users/yassi/source/repos/chip-8/out/build/x64-Debug/CMakeFiles/CHIP-8.dir
+C:/Users/yassi/source/repos/chip-8/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/yassi/source/repos/chip-8/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

@@ -92,7 +92,7 @@ CHIP__8_EXTERNAL_OBJECTS =
 
 CHIP-8.exe: CMakeFiles/CHIP-8.dir/source/main.cpp.obj
 CHIP-8.exe: CMakeFiles/CHIP-8.dir/build.make
-CHIP-8.exe: dependencies/SDL/libSDL2d.a
+CHIP-8.exe: libLibsModule.a
 CHIP-8.exe: CMakeFiles/CHIP-8.dir/linkLibs.rsp
 CHIP-8.exe: CMakeFiles/CHIP-8.dir/objects1.rsp
 CHIP-8.exe: CMakeFiles/CHIP-8.dir/link.txt

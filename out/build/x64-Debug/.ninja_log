@@ -1,0 +1,5 @@
+# ninja log v5
+4	415	7636612832229828	CMakeFiles/LibsModule.dir/source/chip8.cpp.obj	3682923a1c174058
+9	498	7636612833056601	CMakeFiles/LibsModule.dir/source/main.cpp.obj	98472fd385f86d41
+12	506	7636612833106599	CMakeFiles/CHIP-8.dir/source/main.cpp.obj	45552a3504bd0744
+499	550	7636612833575328	LibsModule.lib	ec2c5616fa3d7ed3

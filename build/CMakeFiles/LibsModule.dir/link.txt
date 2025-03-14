@@ -1,0 +1,2 @@
+C:\mingw64\bin\ar.exe qc libLibsModule.a CMakeFiles/LibsModule.dir/source/chip8.cpp.obj CMakeFiles/LibsModule.dir/source/main.cpp.obj
+C:\mingw64\bin\ranlib.exe libLibsModule.a

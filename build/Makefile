@@ -116,6 +116,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named LibsModule
+
+# Build rule for target.
+LibsModule: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 LibsModule
+.PHONY : LibsModule
+
+# fast build rule for target.
+LibsModule/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LibsModule.dir\build.make CMakeFiles/LibsModule.dir/build
+.PHONY : LibsModule/fast
+
+#=============================================================================
 # Target rules for targets named CHIP-8
 
 # Build rule for target.
@@ -128,89 +141,36 @@ CHIP-8/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CHIP-8.dir\build.make CMakeFiles/CHIP-8.dir/build
 .PHONY : CHIP-8/fast
 
-#=============================================================================
-# Target rules for targets named sdl_headers_copy
+source/chip8.obj: source/chip8.cpp.obj
+.PHONY : source/chip8.obj
 
-# Build rule for target.
-sdl_headers_copy: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 sdl_headers_copy
-.PHONY : sdl_headers_copy
+# target to build an object file
+source/chip8.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LibsModule.dir\build.make CMakeFiles/LibsModule.dir/source/chip8.cpp.obj
+.PHONY : source/chip8.cpp.obj
 
-# fast build rule for target.
-sdl_headers_copy/fast:
-	$(MAKE) $(MAKESILENT) -f dependencies\SDL\CMakeFiles\sdl_headers_copy.dir\build.make dependencies/SDL/CMakeFiles/sdl_headers_copy.dir/build
-.PHONY : sdl_headers_copy/fast
+source/chip8.i: source/chip8.cpp.i
+.PHONY : source/chip8.i
 
-#=============================================================================
-# Target rules for targets named SDL2main
+# target to preprocess a source file
+source/chip8.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LibsModule.dir\build.make CMakeFiles/LibsModule.dir/source/chip8.cpp.i
+.PHONY : source/chip8.cpp.i
 
-# Build rule for target.
-SDL2main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SDL2main
-.PHONY : SDL2main
+source/chip8.s: source/chip8.cpp.s
+.PHONY : source/chip8.s
 
-# fast build rule for target.
-SDL2main/fast:
-	$(MAKE) $(MAKESILENT) -f dependencies\SDL\CMakeFiles\SDL2main.dir\build.make dependencies/SDL/CMakeFiles/SDL2main.dir/build
-.PHONY : SDL2main/fast
-
-#=============================================================================
-# Target rules for targets named SDL2
-
-# Build rule for target.
-SDL2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SDL2
-.PHONY : SDL2
-
-# fast build rule for target.
-SDL2/fast:
-	$(MAKE) $(MAKESILENT) -f dependencies\SDL\CMakeFiles\SDL2.dir\build.make dependencies/SDL/CMakeFiles/SDL2.dir/build
-.PHONY : SDL2/fast
-
-#=============================================================================
-# Target rules for targets named SDL2-static
-
-# Build rule for target.
-SDL2-static: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SDL2-static
-.PHONY : SDL2-static
-
-# fast build rule for target.
-SDL2-static/fast:
-	$(MAKE) $(MAKESILENT) -f dependencies\SDL\CMakeFiles\SDL2-static.dir\build.make dependencies/SDL/CMakeFiles/SDL2-static.dir/build
-.PHONY : SDL2-static/fast
-
-#=============================================================================
-# Target rules for targets named SDL2_test
-
-# Build rule for target.
-SDL2_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SDL2_test
-.PHONY : SDL2_test
-
-# fast build rule for target.
-SDL2_test/fast:
-	$(MAKE) $(MAKESILENT) -f dependencies\SDL\CMakeFiles\SDL2_test.dir\build.make dependencies/SDL/CMakeFiles/SDL2_test.dir/build
-.PHONY : SDL2_test/fast
-
-#=============================================================================
-# Target rules for targets named uninstall
-
-# Build rule for target.
-uninstall: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 uninstall
-.PHONY : uninstall
-
-# fast build rule for target.
-uninstall/fast:
-	$(MAKE) $(MAKESILENT) -f dependencies\SDL\CMakeFiles\uninstall.dir\build.make dependencies/SDL/CMakeFiles/uninstall.dir/build
-.PHONY : uninstall/fast
+# target to generate assembly for a file
+source/chip8.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LibsModule.dir\build.make CMakeFiles/LibsModule.dir/source/chip8.cpp.s
+.PHONY : source/chip8.cpp.s
 
 source/main.obj: source/main.cpp.obj
 .PHONY : source/main.obj
 
 # target to build an object file
 source/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LibsModule.dir\build.make CMakeFiles/LibsModule.dir/source/main.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CHIP-8.dir\build.make CMakeFiles/CHIP-8.dir/source/main.cpp.obj
 .PHONY : source/main.cpp.obj
 
@@ -219,6 +179,7 @@ source/main.i: source/main.cpp.i
 
 # target to preprocess a source file
 source/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LibsModule.dir\build.make CMakeFiles/LibsModule.dir/source/main.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CHIP-8.dir\build.make CMakeFiles/CHIP-8.dir/source/main.cpp.i
 .PHONY : source/main.cpp.i
 
@@ -227,6 +188,7 @@ source/main.s: source/main.cpp.s
 
 # target to generate assembly for a file
 source/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LibsModule.dir\build.make CMakeFiles/LibsModule.dir/source/main.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CHIP-8.dir\build.make CMakeFiles/CHIP-8.dir/source/main.cpp.s
 .PHONY : source/main.cpp.s
 
@@ -238,13 +200,11 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... sdl_headers_copy
-	@echo ... uninstall
 	@echo ... CHIP-8
-	@echo ... SDL2
-	@echo ... SDL2-static
-	@echo ... SDL2_test
-	@echo ... SDL2main
+	@echo ... LibsModule
+	@echo ... source/chip8.obj
+	@echo ... source/chip8.i
+	@echo ... source/chip8.s
 	@echo ... source/main.obj
 	@echo ... source/main.i
 	@echo ... source/main.s

@@ -1,13 +1,13 @@
 CMakeFiles/CHIP-8.dir/source/main.cpp.obj: \
  C:\Users\yassi\source\repos\chip-8\source\main.cpp \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_main.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_stdinc.h \
- C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL_config.h \
- C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL_platform.h \
- C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/begin_code.h \
- C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/close_code.h \
- C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL_config_windows.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_main.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_stdinc.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_config.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_platform.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/begin_code.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/close_code.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_config_windows.h \
  C:/mingw64/x86_64-w64-mingw32/include/winsdkver.h \
  C:/mingw64/x86_64-w64-mingw32/include/winapifamily.h \
  C:/mingw64/x86_64-w64-mingw32/include/sdkddkver.h \
@@ -25,23 +25,20 @@ CMakeFiles/CHIP-8.dir/source/main.cpp.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
  C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/begin_code.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/close_code.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_assert.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_atomic.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_platform.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_audio.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_error.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_endian.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_mutex.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_thread.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_assert.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_atomic.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_audio.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_error.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_endian.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_mutex.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_thread.h \
  C:/mingw64/x86_64-w64-mingw32/include/process.h \
  C:/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
  C:/mingw64/x86_64-w64-mingw32/include/sys/types.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_rwops.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_clipboard.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_cpuinfo.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_rwops.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_clipboard.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_cpuinfo.h \
  C:/mingw64/x86_64-w64-mingw32/include/intrin.h \
  C:/mingw64/x86_64-w64-mingw32/include/setjmp.h \
  C:/mingw64/x86_64-w64-mingw32/include/psdk_inc/intrin-impl.h \
@@ -166,39 +163,39 @@ CMakeFiles/CHIP-8.dir/source/main.cpp.obj: \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/ammintrin.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xopintrin.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/cpuid.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_events.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_video.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_pixels.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_rect.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_surface.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_blendmode.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_keyboard.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_keycode.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_scancode.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_mouse.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_joystick.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_guid.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_gamecontroller.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_sensor.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_quit.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_gesture.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_touch.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_filesystem.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_haptic.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_hidapi.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_hints.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_loadso.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_log.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_messagebox.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_metal.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_power.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_render.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_shape.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_system.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_timer.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_version.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_locale.h \
- C:/Users/yassi/source/repos/chip-8/build/dependencies/SDL/include/SDL2/SDL_misc.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_events.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_video.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_pixels.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_rect.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_surface.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_blendmode.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_keyboard.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_keycode.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_scancode.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_mouse.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_joystick.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_guid.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_gamecontroller.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_sensor.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_quit.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_gesture.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_touch.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_filesystem.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_haptic.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_hidapi.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_hints.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_loadso.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_log.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_messagebox.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_metal.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_power.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_render.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_shape.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_system.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_timer.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_version.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_locale.h \
+ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_misc.h \
  C:/mingw64/include/c++/14.2.0/iostream \
  C:/mingw64/include/c++/14.2.0/bits/requires_hosted.h \
  C:/mingw64/include/c++/14.2.0/ostream C:/mingw64/include/c++/14.2.0/ios \
