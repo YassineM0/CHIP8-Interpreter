@@ -1,23 +1,32 @@
 #define SDL_MAIN_HANDLED
-#include <SDL2/SDL.h>
-#include <iostream>
+#include "chip8.h"
+#include <thread>
+#include <chrono>
 
-int main(int argc, char* argv[]) {
-    if (SDL_Init(SDL_INIT_VIDEO) < 0) {
-        std::cerr << "SDL could not initialize! SDL_Error: " << SDL_GetError() << std::endl;
-        return -1;
+int main(int argc, char** argv) {
+    if (argc < 2) {
+        std::cerr << "Usage: " << argv[0] << " <ROM file>" << std::endl;
+        return 1;
     }
 
-    SDL_Window* window = SDL_CreateWindow("SDL2 Window", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 800, 600, SDL_WINDOW_SHOWN);
-    if (!window) {
-        std::cerr << "Window could not be created! SDL_Error: " << SDL_GetError() << std::endl;
-        SDL_Quit();
-        return -1;
-    }
+    Chip8 chip8;
+    chip8.loadRom(argv[1]);
 
-    SDL_Delay(3000); // Show window for 3 seconds
-    SDL_DestroyWindow(window);
-    SDL_Quit();
+    std::cout << "Initializing CHIP-8 Emulator..." << std::endl;
+if (!chip8.loadRom(argv[1])) {
+    std::cerr << "Failed to load ROM: " << argv[1] << std::endl;
+    return 1;
+}
+std::cout << "ROM loaded successfully!" << std::endl;
+
+    while (true) {
+        chip8.emulateCycle();
+        chip8.ProcessInput(chip8.getKey());
+        chip8.updateGraphics();
+        chip8.decrementTimers();
+        std::this_thread::sleep_for(std::chrono::milliseconds(16)); // 60Hz
+    }
+    getchar();
 
     return 0;
 }

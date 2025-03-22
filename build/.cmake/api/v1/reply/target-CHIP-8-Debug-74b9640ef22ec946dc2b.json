@@ -30,7 +30,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 24,
+				"line" : 26,
 				"parent" : 0
 			},
 			{
@@ -42,7 +42,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 26,
+				"line" : 30,
 				"parent" : 0
 			},
 			{
@@ -103,7 +103,7 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-mconsole",
+				"fragment" : "-mconsole   -Wl,-subsystem,console",
 				"role" : "flags"
 			},
 			{

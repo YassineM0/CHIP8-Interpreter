@@ -63,6 +63,7 @@ CMakeFiles/CHIP-8.dir/source/main.cpp.obj: C:/Users/yassi/source/repos/chip-8/so
   C:/mingw64/include/c++/14.2.0/bits/basic_string.tcc \
   C:/mingw64/include/c++/14.2.0/bits/char_traits.h \
   C:/mingw64/include/c++/14.2.0/bits/charconv.h \
+  C:/mingw64/include/c++/14.2.0/bits/chrono.h \
   C:/mingw64/include/c++/14.2.0/bits/concept_check.h \
   C:/mingw64/include/c++/14.2.0/bits/cpp_type_traits.h \
   C:/mingw64/include/c++/14.2.0/bits/cxxabi_forced.h \
@@ -88,6 +89,7 @@ CMakeFiles/CHIP-8.dir/source/main.cpp.obj: C:/Users/yassi/source/repos/chip-8/so
   C:/mingw64/include/c++/14.2.0/bits/new_allocator.h \
   C:/mingw64/include/c++/14.2.0/bits/ostream.tcc \
   C:/mingw64/include/c++/14.2.0/bits/ostream_insert.h \
+  C:/mingw64/include/c++/14.2.0/bits/parse_numbers.h \
   C:/mingw64/include/c++/14.2.0/bits/postypes.h \
   C:/mingw64/include/c++/14.2.0/bits/predefined_ops.h \
   C:/mingw64/include/c++/14.2.0/bits/ptr_traits.h \
@@ -95,6 +97,7 @@ CMakeFiles/CHIP-8.dir/source/main.cpp.obj: C:/Users/yassi/source/repos/chip-8/so
   C:/mingw64/include/c++/14.2.0/bits/refwrap.h \
   C:/mingw64/include/c++/14.2.0/bits/requires_hosted.h \
   C:/mingw64/include/c++/14.2.0/bits/std_abs.h \
+  C:/mingw64/include/c++/14.2.0/bits/std_thread.h \
   C:/mingw64/include/c++/14.2.0/bits/stl_algobase.h \
   C:/mingw64/include/c++/14.2.0/bits/stl_construct.h \
   C:/mingw64/include/c++/14.2.0/bits/stl_function.h \
@@ -106,17 +109,22 @@ CMakeFiles/CHIP-8.dir/source/main.cpp.obj: C:/Users/yassi/source/repos/chip-8/so
   C:/mingw64/include/c++/14.2.0/bits/streambuf_iterator.h \
   C:/mingw64/include/c++/14.2.0/bits/string_view.tcc \
   C:/mingw64/include/c++/14.2.0/bits/stringfwd.h \
+  C:/mingw64/include/c++/14.2.0/bits/this_thread_sleep.h \
+  C:/mingw64/include/c++/14.2.0/bits/unique_ptr.h \
   C:/mingw64/include/c++/14.2.0/bits/uses_allocator.h \
   C:/mingw64/include/c++/14.2.0/bits/uses_allocator_args.h \
   C:/mingw64/include/c++/14.2.0/bits/utility.h \
   C:/mingw64/include/c++/14.2.0/bits/version.h \
   C:/mingw64/include/c++/14.2.0/cctype \
   C:/mingw64/include/c++/14.2.0/cerrno \
+  C:/mingw64/include/c++/14.2.0/chrono \
   C:/mingw64/include/c++/14.2.0/clocale \
   C:/mingw64/include/c++/14.2.0/concepts \
   C:/mingw64/include/c++/14.2.0/cstddef \
+  C:/mingw64/include/c++/14.2.0/cstdint \
   C:/mingw64/include/c++/14.2.0/cstdio \
   C:/mingw64/include/c++/14.2.0/cstdlib \
+  C:/mingw64/include/c++/14.2.0/ctime \
   C:/mingw64/include/c++/14.2.0/cwchar \
   C:/mingw64/include/c++/14.2.0/cwctype \
   C:/mingw64/include/c++/14.2.0/debug/assertions.h \
@@ -132,15 +140,18 @@ CMakeFiles/CHIP-8.dir/source/main.cpp.obj: C:/Users/yassi/source/repos/chip-8/so
   C:/mingw64/include/c++/14.2.0/iosfwd \
   C:/mingw64/include/c++/14.2.0/iostream \
   C:/mingw64/include/c++/14.2.0/istream \
+  C:/mingw64/include/c++/14.2.0/limits \
   C:/mingw64/include/c++/14.2.0/new \
   C:/mingw64/include/c++/14.2.0/ostream \
   C:/mingw64/include/c++/14.2.0/pstl/pstl_config.h \
+  C:/mingw64/include/c++/14.2.0/ratio \
   C:/mingw64/include/c++/14.2.0/stdexcept \
   C:/mingw64/include/c++/14.2.0/stdlib.h \
   C:/mingw64/include/c++/14.2.0/streambuf \
   C:/mingw64/include/c++/14.2.0/string \
   C:/mingw64/include/c++/14.2.0/string_view \
   C:/mingw64/include/c++/14.2.0/system_error \
+  C:/mingw64/include/c++/14.2.0/thread \
   C:/mingw64/include/c++/14.2.0/tuple \
   C:/mingw64/include/c++/14.2.0/type_traits \
   C:/mingw64/include/c++/14.2.0/typeinfo \
@@ -312,8 +323,11 @@ CMakeFiles/CHIP-8.dir/source/main.cpp.obj: C:/Users/yassi/source/repos/chip-8/so
   C:/mingw64/x86_64-w64-mingw32/include/wchar.h \
   C:/mingw64/x86_64-w64-mingw32/include/wctype.h \
   C:/mingw64/x86_64-w64-mingw32/include/winapifamily.h \
-  C:/mingw64/x86_64-w64-mingw32/include/winsdkver.h
+  C:/mingw64/x86_64-w64-mingw32/include/winsdkver.h \
+  C:/Users/yassi/source/repos/chip-8/source/chip8.h
 
+
+C:/Users/yassi/source/repos/chip-8/source/chip8.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/winsdkver.h:
 
@@ -379,11 +393,25 @@ C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/x86intrin.h:
 
-C:/mingw64/include/c++/14.2.0/ext/numeric_traits.h:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/wbnoinvdintrin.h:
 
-C:/mingw64/include/c++/14.2.0/ext/alloc_traits.h:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/waitpkgintrin.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vlintrin.h:
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/vpclmulqdqintrin.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/uintrintrin.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tsxldtrkintrin.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tmmintrin.h:
+
+C:/mingw64/include/c++/14.2.0/cstdint:
+
+C:/mingw64/include/c++/14.2.0/bits/ostream.tcc:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512dqintrin.h:
 
 C:/mingw64/include/c++/14.2.0/cstddef:
 
@@ -394,8 +422,6 @@ C:/mingw64/include/c++/14.2.0/cwchar:
 C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_locale.h:
 
 C:/mingw64/include/c++/14.2.0/pstl/pstl_config.h:
-
-C:/mingw64/include/c++/14.2.0/ext/type_traits.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xsaveintrin.h:
 
@@ -415,17 +441,17 @@ C:/mingw64/x86_64-w64-mingw32/include/errno.h:
 
 C:/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h:
 
-C:/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h:
+C:/mingw64/include/c++/14.2.0/bits/this_thread_sleep.h:
 
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tsxldtrkintrin.h:
+C:/mingw64/include/c++/14.2.0/bits/stl_function.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/x86gprintrin.h:
+
+C:/mingw64/include/c++/14.2.0/clocale:
 
 C:/mingw64/include/c++/14.2.0/bits/stl_algobase.h:
 
-C:/mingw64/include/c++/14.2.0/bits/functional_hash.h:
-
-C:/mingw64/include/c++/14.2.0/bits/ostream.tcc:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512dqintrin.h:
+C:/mingw64/include/c++/14.2.0/bits/std_thread.h:
 
 C:/mingw64/include/c++/14.2.0/bits/nested_exception.h:
 
@@ -440,6 +466,10 @@ C:/mingw64/include/c++/14.2.0/bits/locale_facets.tcc:
 C:/mingw64/include/c++/14.2.0/bits/ptr_traits.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/pconfigintrin.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tbmintrin.h:
+
+C:/mingw64/include/c++/14.2.0/bits/istream.tcc:
 
 C:/mingw64/include/c++/14.2.0/bits/ios_base.h:
 
@@ -463,12 +493,6 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/rdseedintrin.h:
 
 C:/mingw64/include/c++/14.2.0/bits/requires_hosted.h:
 
-C:/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h:
-
-C:/mingw64/include/c++/14.2.0/ext/string_conversions.h:
-
-C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_scancode.h:
-
 C:/mingw64/include/c++/14.2.0/bits/exception.h:
 
 C:/mingw64/include/c++/14.2.0/debug/assertions.h:
@@ -489,6 +513,10 @@ C:/mingw64/include/c++/14.2.0/bits/concept_check.h:
 
 C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_gesture.h:
 
+C:/mingw64/x86_64-w64-mingw32/include/wctype.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vpopcntdqvlintrin.h:
+
 C:/mingw64/include/c++/14.2.0/cctype:
 
 C:/mingw64/include/c++/14.2.0/bits/move.h:
@@ -498,6 +526,10 @@ C:/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h:
 C:/mingw64/include/c++/14.2.0/bits/char_traits.h:
 
 C:/mingw64/include/c++/14.2.0/bits/basic_string.tcc:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/wmmintrin.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/gfniintrin.h:
 
 C:/mingw64/include/c++/14.2.0/bits/stl_iterator.h:
 
@@ -511,10 +543,6 @@ C:/mingw64/x86_64-w64-mingw32/include/process.h:
 
 C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_surface.h:
 
-C:/mingw64/include/c++/14.2.0/debug/debug.h:
-
-C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_keycode.h:
-
 C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_pixels.h:
 
 C:/mingw64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h:
@@ -522,6 +550,8 @@ C:/mingw64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h:
 C:/mingw64/include/c++/14.2.0/bits/basic_ios.tcc:
 
 C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL.h:
+
+C:/mingw64/include/c++/14.2.0/bits/functional_hash.h:
 
 C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_clipboard.h:
 
@@ -534,6 +564,20 @@ C:/mingw64/include/c++/14.2.0/bits/cxxabi_forced.h:
 C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_config.h:
 
 C:/mingw64/include/c++/14.2.0/cwctype:
+
+C:/mingw64/include/c++/14.2.0/chrono:
+
+C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_rect.h:
+
+C:/mingw64/include/c++/14.2.0/ctime:
+
+C:/mingw64/x86_64-w64-mingw32/include/pthread_signal.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/corecrt.h:
+
+C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_sensor.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxbf16intrin.h:
 
 C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_error.h:
 
@@ -553,6 +597,8 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bitalgvlintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxneconvertintrin.h:
 
+C:/mingw64/include/c++/14.2.0/bits/parse_numbers.h:
+
 C:/mingw64/x86_64-w64-mingw32/include/winapifamily.h:
 
 C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_timer.h:
@@ -562,6 +608,16 @@ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_assert.h:
 C:/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h:
 
 C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_blendmode.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/usermsrintrin.h:
+
+C:/mingw64/include/c++/14.2.0/bits/new_allocator.h:
+
+C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_keycode.h:
+
+C:/mingw64/include/c++/14.2.0/debug/debug.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vlintrin.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/locale.h:
 
@@ -576,10 +632,6 @@ C:/mingw64/include/c++/14.2.0/bits/ostream_insert.h:
 C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_quit.h:
 
 C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_haptic.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h:
-
-C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_events.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/limits.h:
 
@@ -599,6 +651,8 @@ C:/mingw64/include/c++/14.2.0/bit:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vldqintrin.h:
 
+C:/mingw64/include/c++/14.2.0/bits/unique_ptr.h:
+
 C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_joystick.h:
 
 C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_power.h:
@@ -614,6 +668,12 @@ C:/mingw64/include/c++/14.2.0/bits/locale_classes.h:
 C:/mingw64/include/c++/14.2.0/bits/localefwd.h:
 
 C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_hints.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/vaesintrin.h:
+
+C:/mingw64/include/c++/14.2.0/bits/stl_construct.h:
+
+C:/mingw64/include/c++/14.2.0/bits/postypes.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/time.h:
 
@@ -632,14 +692,6 @@ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_messagebox.
 C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_misc.h:
 
 C:/mingw64/include/c++/14.2.0/backward/binders.h:
-
-C:/mingw64/include/c++/14.2.0/iostream:
-
-C:/mingw64/include/c++/14.2.0/exception:
-
-C:/mingw64/include/c++/14.2.0/bits/charconv.h:
-
-C:/mingw64/include/c++/14.2.0/concepts:
 
 C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_mouse.h:
 
@@ -661,13 +713,13 @@ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_log.h:
 
 C:/mingw64/include/c++/14.2.0/bits/uses_allocator.h:
 
-C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_rect.h:
-
 C:/mingw64/include/c++/14.2.0/bits/stl_iterator_base_types.h:
 
 C:/mingw64/include/c++/14.2.0/bits/basic_string.h:
 
 C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_render.h:
+
+C:/mingw64/include/c++/14.2.0/limits:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/enqcmdintrin.h:
 
@@ -677,14 +729,6 @@ C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_version.h:
 
 C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_rwops.h:
 
-C:/mingw64/x86_64-w64-mingw32/include/pthread_signal.h:
-
-C:/mingw64/x86_64-w64-mingw32/include/corecrt.h:
-
-C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_sensor.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxbf16intrin.h:
-
 C:/mingw64/include/c++/14.2.0/bits/cxxabi_init_exception.h:
 
 C:/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr-default.h:
@@ -693,11 +737,35 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/shaintrin.h:
 
 C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_thread.h:
 
-C:/mingw64/include/c++/14.2.0/bits/stl_function.h:
+C:/mingw64/include/c++/14.2.0/bits/charconv.h:
+
+C:/mingw64/include/c++/14.2.0/concepts:
+
+C:/mingw64/include/c++/14.2.0/iostream:
+
+C:/mingw64/include/c++/14.2.0/exception:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xmmintrin.h:
 
+C:/mingw64/include/c++/14.2.0/bits/chrono.h:
+
 C:/mingw64/include/c++/14.2.0/bits/basic_ios.h:
+
+C:/mingw64/include/c++/14.2.0/ext/alloc_traits.h:
+
+C:/mingw64/include/c++/14.2.0/ext/numeric_traits.h:
+
+C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_events.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h:
+
+C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_scancode.h:
+
+C:/mingw64/include/c++/14.2.0/ext/string_conversions.h:
+
+C:/mingw64/include/c++/14.2.0/ext/type_traits.h:
 
 C:/mingw64/include/c++/14.2.0/ios:
 
@@ -706,10 +774,6 @@ C:/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h:
 C:/mingw64/include/c++/14.2.0/iosfwd:
 
 C:/mingw64/include/c++/14.2.0/istream:
-
-C:/mingw64/include/c++/14.2.0/bits/istream.tcc:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tbmintrin.h:
 
 C:/mingw64/include/c++/14.2.0/new:
 
@@ -722,6 +786,16 @@ C:/mingw64/x86_64-w64-mingw32/include/signal.h:
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vbmivlintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/emmintrin.h:
+
+C:/mingw64/include/c++/14.2.0/ratio:
+
+C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_platform.h:
+
+C:/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_inline.h:
+
+C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_cpuinfo.h:
+
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/lwpintrin.h:
 
 C:/mingw64/include/c++/14.2.0/stdlib.h:
 
@@ -739,14 +813,6 @@ C:/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/fma4intrin.h:
 
-C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_platform.h:
-
-C:/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/ctype_inline.h:
-
-C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_cpuinfo.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/lwpintrin.h:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512fp16vlintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxfp16intrin.h:
@@ -756,12 +822,6 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxtileintrin.h:
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx2intrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx5124fmapsintrin.h:
-
-C:/mingw64/include/c++/14.2.0/bits/stl_construct.h:
-
-C:/mingw64/include/c++/14.2.0/bits/postypes.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/vaesintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx5124vnniwintrin.h:
 
@@ -774,8 +834,6 @@ C:/mingw64/x86_64-w64-mingw32/include/stdlib.h:
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniint8intrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mwaitxintrin.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/tmmintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512bitalgintrin.h:
 
@@ -811,6 +869,8 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/sm4intrin.h:
 
 C:/mingw64/include/c++/14.2.0/ext/atomicity.h:
 
+C:/mingw64/include/c++/14.2.0/thread:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/adxintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vlbwintrin.h:
@@ -818,10 +878,6 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vlbwintrin.h:
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/amxint8intrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/gfniintrin.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/wmmintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vnniintrin.h:
 
@@ -839,15 +895,9 @@ C:/mingw64/include/c++/14.2.0/x86_64-w64-mingw32/bits/gthr.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vpopcntdqintrin.h:
 
-C:/mingw64/x86_64-w64-mingw32/include/wctype.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avx512vpopcntdqvlintrin.h:
-
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxifmaintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxintrin.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/wbnoinvdintrin.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/avxvnniint16intrin.h:
 
@@ -924,17 +974,3 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h:
 C:/Users/yassi/source/repos/chip-8/dependencies/SDL/include/SDL2/SDL_endian.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/uintrintrin.h:
-
-C:/mingw64/include/c++/14.2.0/bits/new_allocator.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/usermsrintrin.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/vpclmulqdqintrin.h:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/waitpkgintrin.h:
-
-C:/mingw64/include/c++/14.2.0/clocale:
-
-C:/mingw64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/x86gprintrin.h:
