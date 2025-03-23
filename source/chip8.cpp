@@ -49,9 +49,9 @@ Chip8::Chip8()
         exit(1);
     }
 
-    window = SDL_CreateWindow("CHIP-8", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 640, 320, SDL_WINDOW_SHOWN);
+    window = SDL_CreateWindow("CHIP-8", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1200, 500, SDL_WINDOW_SHOWN);
     renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
-    texture = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGBA8888, SDL_TEXTUREACCESS_STREAMING, WIDTH, HEIGHT * sizeof(uint32_t));
+    texture = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGB332, SDL_TEXTUREACCESS_STREAMING, WIDTH, HEIGHT);
 
     // load font starting from 0x50
     for (unsigned int i = 0; i < fontSet_size; i++)
@@ -70,11 +70,18 @@ Chip8::~Chip8()
 
 void Chip8::updateGraphics()
 {
+    if (!texture || !renderer)
+    {
+        std::cerr << "Error: SDL texture or renderer is not initialized!" << std::endl;
+        return;
+    }
+
     SDL_UpdateTexture(texture, nullptr, display, WIDTH * sizeof(uint32_t));
     SDL_RenderClear(renderer);
     SDL_RenderCopy(renderer, texture, nullptr, nullptr);
     SDL_RenderPresent(renderer);
 }
+
 
 bool Chip8::ProcessInput(uint8_t* keys)
 	{

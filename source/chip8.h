@@ -30,7 +30,7 @@ private:
     uint8_t sp; //stack pointer
     uint16_t stack[STACK_SIZE]; // 16 levels stack
 
-    uint32_t display[HEIGHT][WIDTH]; // 64*32 screen size
+    uint32_t display[HEIGHT * WIDTH]; // 64*32 screen size
 
     uint8_t key[16];
 
